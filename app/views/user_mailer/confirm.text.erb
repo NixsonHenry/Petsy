@@ -1,0 +1,10 @@
+Hello,
+
+
+Thank you <%= @user.username %> for your enrollment.
+You can go to the following link to validate your account.
+
+<%= confirm_user_url(id: @user.id, token: @user.confirmation_token) %>
+
+Thank you!!
+
